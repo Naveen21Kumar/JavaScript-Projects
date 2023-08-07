@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #6a6464;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  background: lightcoral;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #262626;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2.5s;
+}
+
+.hover {
+  transform: scale(2);
+}
