@@ -11,15 +11,15 @@
 <body>
     <p class="title">Rock Paper Scissors</p>
 
-    <button onclick="playGame('rock')" class="move-button" type="button">
+    <button class="move-button js-rock-button" type="button">
         <img src="images/rock-emoji.png" alt="rock" class="move-icon" />
     </button>
 
-    <button onclick="playGame('paper')" class="move-button" type="button">
+    <button class="move-button js-paper-button" type="button">
         <img src="images/paper-emoji.png" alt="paper" class="move-icon" />
     </button>
 
-    <button onclick="playGame('scissors') " class="move-button" type="button">
+    <button class="move-button js-scissors-button" type="button">
         <img src="images/scissors-emoji.png" alt="scissors" class="move-icon" />
     </button>
 
@@ -29,6 +29,10 @@
 
     <button onclick="resetScore()" class="reset-score-button" type="button">
         Reset Score
+    </button>
+
+    <button onclick="autoPlay()" class="auto-play-button" type="button">
+        Auto Play
     </button>
 
     <script src="scripts/script.js"></script>
