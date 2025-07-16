@@ -12,7 +12,7 @@ async function loadPage() {
     const value = await new Promise((resolve, reject) => {
       // throw 'error2';
       loadCart(() => {
-        // resolve('value3');
+        resolve('value3');
         reject('error3');
       });
     });
