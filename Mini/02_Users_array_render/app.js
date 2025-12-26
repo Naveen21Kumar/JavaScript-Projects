@@ -27,8 +27,17 @@ let data = [
 
 const info = document.querySelector('#info');
 
+// Old code
+/*
 let details = data.map(function (item) {
   return '<div>' + item.name + ' is ' + item.age + ' years old' + '</div>';
 });
-
 info.innerHTML = details.join('\n');
+*/
+
+// new code (safe without innerHTML)
+data.forEach((item) => {
+  const li = document.createElement('li');
+  li.innerText = `${item.name} is ${item.age} years old`;
+  info.append(li);
+});

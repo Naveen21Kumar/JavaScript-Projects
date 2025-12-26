@@ -24,9 +24,10 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  list-style: none;
 }
 
-#info div {
+#info li {
   background: lightblue;
   padding: 3rem;
   margin: 0.5rem;
